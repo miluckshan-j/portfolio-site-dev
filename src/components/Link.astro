@@ -7,10 +7,7 @@ interface Props {
 const { link, content } = Astro.props;
 ---
 
-<a
-  href={link}
-  class="underline decoration-sky-500 decoration-2 hover:text-sky-500 hover:no-underline"
->
+<a href={link} class="underline no-underline decoration-2">
   {content}
   {" ↗"}
 </a>

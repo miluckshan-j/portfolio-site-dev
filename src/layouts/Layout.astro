@@ -1,4 +1,8 @@
 ---
+import Card from "../components/Card.astro";
+import Navigation from "../components/Navigation.astro";
+import Social from "../sections/general/Social.astro";
+
 interface Props {
   title?: string;
   description?: string;
@@ -32,6 +36,19 @@ const { title, description, url, image } = Astro.props;
   <body
     class="bg-slate-100 p-8 md:p-16 text-gray-700 antialiased text-sm md:text-base font-light"
   >
+    <div class="grid md:grid-cols-4 gap-4 mb-16">
+      <Card classes="col-span-4 md:col-span-3 grid content-center">
+        <p class="text-lg md:text-4xl font-bold">Miluckshan J. Vidyajayan</p>
+        <p class="text-base md:text-lg font-normal">Senior Software Engineer</p>
+        <p>Engineering solutions to transform ideas into reality</p>
+      </Card>
+      <Card
+        classes="col-span-4 md:col-span-1 grid grid-cols-4 gap-1 md:gap-4 content-around justify-items-center"
+      >
+        <Social />
+      </Card>
+      <Navigation />
+    </div>
     <slot />
   </body>
 </html>

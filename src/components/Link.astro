@@ -2,12 +2,13 @@
 interface Props {
   link?: string;
   content?: string;
+  disableIcon?: boolean;
 }
 
-const { link, content } = Astro.props;
+const { link, content, disableIcon } = Astro.props;
 ---
 
 <a href={link} class="underline no-underline decoration-2">
   {content}
-  {" ↗"}
+  {disableIcon ? null : " ↗"}
 </a>

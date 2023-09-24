@@ -29,7 +29,9 @@ const { title, description, url, image } = Astro.props;
     <meta property="twitter:image" content={image} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
-  <body class="bg-slate-100 p-8 md:p-16 text-gray-700 subpixel-antialiased">
+  <body
+    class="bg-slate-100 p-8 md:p-16 text-gray-700 subpixel-antialiased text-sm md:text-base font-light"
+  >
     <slot />
   </body>
 </html>

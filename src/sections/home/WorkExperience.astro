@@ -1,0 +1,33 @@
+---
+import workExperiences from "../../data/work-experiences.json";
+import Link from "../../components/Link.astro";
+---
+
+<p
+  class="text-base md:text-xl font-normal md:font-semibold text-center md:text-left"
+>
+  Work Experience
+</p>
+<div class="grid md:grid-cols-4 gap-0 md:gap-4 content-center items-baseline">
+  {
+    workExperiences.map((workExperience) => {
+      return (
+        <>
+          <div class="col-span-2 md:col-span-1">
+            <p class="text-xs font-extralight">{workExperience.duration}</p>
+          </div>
+          <div class="col-span-2 md:col-span-3">
+            <p class="font-bold">{workExperience.position}</p>
+            <p class="font-normal">
+              <Link
+                link={workExperience.link}
+                content={workExperience.workPlace}
+              />
+            </p>
+            <p>{workExperience.description}</p>
+          </div>
+        </>
+      );
+    })
+  }
+</div>

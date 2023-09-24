@@ -1,4 +1,5 @@
 ---
+import Pill from "../../components/Pill.astro";
 import strengths from "../../data/strengths.json";
 ---
 
@@ -7,16 +8,10 @@ import strengths from "../../data/strengths.json";
 >
   Strengths
 </p>
-<p class="text-sm md:text-base font-light">
+<p>
   The following are the strengths I've gained and demonstrated throughout my
   career
 </p>
 <div class="md:flex flex-wrap text-sm md:text-base font-extralight text-center">
-  {
-    strengths.map((strength) => (
-      <p class="bg-slate-100 rounded-lg py-1 px-3 mt-2 mr-0 md:mr-2">
-        {strength.value}
-      </p>
-    ))
-  }
+  {strengths.map((strength) => <Pill value={strength.value} />)}
 </div>

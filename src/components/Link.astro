@@ -8,7 +8,10 @@ interface Props {
 const { link, content, disableIcon } = Astro.props;
 ---
 
-<a href={link} class="underline no-underline decoration-2">
+<a
+  href={link}
+  class="underline no-underline decoration-2 hover:underline hover:decoration-cyan-900 hover:text-cyan-900"
+>
   {content}
   {disableIcon ? null : " ↗"}
 </a>

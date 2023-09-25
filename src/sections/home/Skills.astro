@@ -12,6 +12,6 @@ import skills from "../../data/skills.json";
   The following are the strengths I've gained and demonstrated throughout my
   career
 </p>
-<div class="md:flex flex-wrap text-sm md:text-base font-extralight text-center">
-  {skills.map((skill) => <Pill value={skill.value} />)}
+<div class="flex flex-wrap text-sm md:text-base font-extralight text-center">
+  {skills.map((skill) => <Pill classes="mx-2 md:mx-0" value={skill.value} />)}
 </div>

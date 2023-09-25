@@ -1,7 +1,7 @@
 ---
 import Card from "../../components/Card.astro";
 import ImageCard from "../../components/ImageCard.astro";
-import Textcard from "../../components/Textcard.astro";
+import TextCard from "../../components/TextCard.astro";
 import Button from "../../components/Button.astro";
 import blogs from "../../data/blogs.json";
 ---
@@ -23,7 +23,7 @@ import blogs from "../../data/blogs.json";
             image={blog.image}
           />
         ) : (
-          <Textcard
+          <TextCard
             classes="grid md:grid-cols-1 gap-4"
             title={blog.title}
             summary={blog.summary}

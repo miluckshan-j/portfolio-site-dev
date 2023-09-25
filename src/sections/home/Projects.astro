@@ -1,0 +1,31 @@
+---
+import Card from "../../components/Card.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+import Button from "../../components/Button.astro";
+import projects from "../../data/projects.json";
+---
+
+<p
+  class="text-base md:text-3xl font-normal md:font-semibold text-center md:text-left mb-3"
+>
+  Projects
+</p>
+<Card>
+  <div class="grid md:grid-cols-2 gap-4">
+    {
+      projects.map((project) => {
+        return (
+          <ProjectCard
+            title={project.title}
+            summary={project.summary}
+            image={project.image}
+            technologies={project.technologies}
+          />
+        );
+      })
+    }
+  </div>
+  <Card classes="col-span-2 grid content-center pb-0" hideDropShadow>
+    <Button classes="md:w-2/12 mx-auto" text="View More" />
+  </Card>
+</Card>

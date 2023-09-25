@@ -1,0 +1,40 @@
+---
+import Pill from "./Pill.astro";
+
+interface Props {
+  classes?: string;
+  title?: string;
+  summary?: string;
+  image?: string;
+  technologies?: string[];
+}
+
+const { classes, title, summary, image, technologies } = Astro.props;
+---
+
+<div
+  class=`rounded-lg bg-slate-100 grid md:grid-cols-3 md:min-h-[10rem] ${classes}`
+>
+  <div
+    class="col-span-1 rounded-l-lg bg-no-repeat bg-cover bg-center"
+    style=`background-image: url("${image}")`
+  >
+  </div>
+  <div class="col-span-2 p-4">
+    <p class="font-bold">
+      {title}
+    </p>
+    <p class="line-clamp-2">
+      {summary}
+    </p>
+    <div
+      class="md:flex flex-wrap text-sm md:text-base font-extralight text-center"
+    >
+      {
+        technologies?.map((technology) => {
+          return <Pill classes="bg-white" value={technology} />;
+        })
+      }
+    </div>
+  </div>
+</div>

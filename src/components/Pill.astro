@@ -1,11 +1,14 @@
 ---
 interface Props {
+  classes?: string;
   value?: string;
 }
 
-const { value } = Astro.props;
+const { value, classes } = Astro.props;
 ---
 
-<p class="bg-slate-100 text-xs rounded-lg py-1 px-3 mt-2 mr-0 md:mr-2">
+<p
+  class=`bg-slate-100 text-xs rounded-lg py-1 px-3 mt-2 mr-0 md:mr-2 ${classes}`
+>
   {value}
 </p>

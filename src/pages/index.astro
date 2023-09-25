@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import Strengths from "../sections/home/Strengths.astro";
+import Skills from "../sections/home/Skills.astro";
 import WorkExperience from "../sections/home/WorkExperience.astro";
 import Blogs from "../sections/home/Blogs.astro";
 ---
@@ -10,10 +10,16 @@ import Blogs from "../sections/home/Blogs.astro";
   <main>
     <div class="grid md:grid-cols-4 gap-4">
       <Card classes="col-span-4 md:col-span-2 grid content-center">
-        <Strengths />
+        <Skills />
+      </Card>
+      <Card classes="col-span-4 md:col-span-2 grid content-center row-span-3">
+        <WorkExperience />
       </Card>
       <Card classes="col-span-4 md:col-span-2 grid content-center">
-        <WorkExperience />
+        <Skills />
+      </Card>
+      <Card classes="col-span-4 md:col-span-2 grid content-center">
+        <Skills />
       </Card>
       <div class="col-span-4">
         <Blogs />

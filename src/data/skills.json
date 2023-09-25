@@ -1,0 +1,70 @@
+[
+  {
+    "key": 1,
+    "value": "HTML"
+  },
+  {
+    "key": 2,
+    "value": "CSS"
+  },
+  {
+    "key": 3,
+    "value": "Tailwind CSS"
+  },
+  {
+    "key": 4,
+    "value": "JavaScript"
+  },
+  {
+    "key": 5,
+    "value": "TypeScript"
+  },
+  {
+    "key": 6,
+    "value": "React"
+  },
+  {
+    "key": 7,
+    "value": "Astro"
+  },
+  {
+    "key": 8,
+    "value": "PHP"
+  },
+  {
+    "key": 9,
+    "value": "Node.js"
+  },
+  {
+    "key": 10,
+    "value": "Python"
+  },
+  {
+    "key": 11,
+    "value": "MongoDB"
+  },
+  {
+    "key": 12,
+    "value": "SQL"
+  },
+  {
+    "key": 13,
+    "value": "Git"
+  },
+  {
+    "key": 14,
+    "value": "AWS"
+  },
+  {
+    "key": 15,
+    "value": "Linux"
+  },
+  {
+    "key": 16,
+    "value": "Figma"
+  },
+  {
+    "key": 17,
+    "value": "WordPress"
+  }
+]

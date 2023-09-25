@@ -1,17 +1,17 @@
 ---
 import Pill from "../../components/Pill.astro";
-import strengths from "../../data/strengths.json";
+import skills from "../../data/skills.json";
 ---
 
 <p
   class="text-base md:text-xl font-normal md:font-semibold text-center md:text-left"
 >
-  Strengths
+  Skills
 </p>
 <p>
   The following are the strengths I've gained and demonstrated throughout my
   career
 </p>
 <div class="md:flex flex-wrap text-sm md:text-base font-extralight text-center">
-  {strengths.map((strength) => <Pill value={strength.value} />)}
+  {skills.map((skill) => <Pill value={skill.value} />)}
 </div>

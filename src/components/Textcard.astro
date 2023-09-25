@@ -1,0 +1,20 @@
+---
+interface Props {
+  classes?: string;
+  title?: string;
+  summary?: string;
+}
+
+const { classes, title, summary } = Astro.props;
+---
+
+<div class=`rounded-lg bg-slate-100 p-4 ${classes}`>
+  <p
+    class="text-base md:text-xl font-normal md:font-semibold text-center md:text-left"
+  >
+    {title}
+  </p>
+  <p class="line-clamp-4">
+    {summary}
+  </p>
+</div>

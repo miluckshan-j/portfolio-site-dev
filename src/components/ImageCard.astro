@@ -1,0 +1,28 @@
+---
+interface Props {
+  classes?: string;
+  title?: string;
+  summary?: string;
+  image?: string;
+}
+
+const { classes, title, summary, image } = Astro.props;
+---
+
+<div
+  class=`rounded-lg bg-no-repeat bg-cover bg-top text-white ${classes}`
+  style=`background-image: url("${image}")`
+>
+  <div
+    class="rounded-b-lg bg-gradient-to-t from-cyan-950 from-40% to-transparent to-80% p-4 grid gap-4 content-end"
+  >
+    <p
+      class="text-base md:text-xl font-normal md:font-semibold text-center md:text-left"
+    >
+      {title}
+    </p>
+    <p class="line-clamp-4">
+      {summary}
+    </p>
+  </div>
+</div>

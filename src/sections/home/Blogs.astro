@@ -1,5 +1,8 @@
 ---
 import Card from "../../components/Card.astro";
+import ImageCard from "../../components/ImageCard.astro";
+import Textcard from "../../components/Textcard.astro";
+import blogs from "../../data/blogs.json";
 ---
 
 <p
@@ -9,98 +12,23 @@ import Card from "../../components/Card.astro";
 </p>
 <Card>
   <div class="grid md:grid-cols-2 gap-4">
-    <div
-      class="rounded-lg bg-no-repeat bg-cover bg-top text-white grid md:grid-cols-1 row-span-2"
-      style=`background-image: url("https://images.pexels.com/photos/15007209/pexels-photo-15007209/free-photo-of-photo-of-a-posing-woman-with-long-hair-standing-on-a-winter-meadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`
-    >
-      <div
-        class="rounded-b-lg bg-gradient-to-t from-cyan-950 from-40% to-transparent to-80% p-4 grid content-end"
-      >
-        <p
-          class="text-base md:text-xl font-normal md:font-semibold text-center md:text-left"
-        >
-          Installing Multiple Ruby Versions using rbenv on macOS
-        </p>
-        <p class="line-clamp-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </div>
-    </div>
-    <div class="rounded-lg grid md:grid-cols-1 gap-4 bg-slate-100 p-4">
-      <p
-        class="text-base md:text-xl font-normal md:font-semibold text-center md:text-left"
-      >
-        Installing Multiple Ruby Versions using rbenv on macOS
-      </p>
-      <p class="line-clamp-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-    </div>
-    <div class="rounded-lg grid md:grid-cols-1 gap-4 bg-slate-100 p-4">
-      <p
-        class="text-base md:text-xl font-normal md:font-semibold text-center md:text-left"
-      >
-        Installing Multiple Ruby Versions using rbenv on macOS
-      </p>
-      <p class="line-clamp-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-    </div>
-    <div class="rounded-lg grid md:grid-cols-1 gap-4 bg-slate-100 p-4">
-      <p
-        class="text-base md:text-xl font-normal md:font-semibold text-center md:text-left"
-      >
-        Installing Multiple Ruby Versions using rbenv on macOS
-      </p>
-      <p class="line-clamp-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-    </div>
-
-    <div
-      class="rounded-lg bg-no-repeat bg-cover bg-top text-white grid md:grid-cols-1 row-span-2"
-      style=`background-image: url("https://images.pexels.com/photos/15007209/pexels-photo-15007209/free-photo-of-photo-of-a-posing-woman-with-long-hair-standing-on-a-winter-meadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`
-    >
-      <div
-        class="rounded-b-lg bg-gradient-to-t from-cyan-950 from-40% to-transparent to-80% p-4 grid content-end"
-      >
-        <p
-          class="text-base md:text-xl font-normal md:font-semibold text-center md:text-left"
-        >
-          Installing Multiple Ruby Versions using rbenv on macOS
-        </p>
-        <p class="line-clamp-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </div>
-    </div>
-    <div class="rounded-lg grid md:grid-cols-1 gap-4 bg-slate-100 p-4">
-      <p
-        class="text-base md:text-xl font-normal md:font-semibold text-center md:text-left"
-      >
-        Installing Multiple Ruby Versions using rbenv on macOS
-      </p>
-      <p class="line-clamp-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-    </div>
+    {
+      blogs.map((blog) => {
+        return blog.image ? (
+          <ImageCard
+            classes="grid md:grid-cols-1 row-span-2"
+            title={blog.title}
+            summary={blog.summary}
+            image={blog.image}
+          />
+        ) : (
+          <Textcard
+            classes="grid md:grid-cols-1 gap-4"
+            title={blog.title}
+            summary={blog.summary}
+          />
+        );
+      })
+    }
   </div>
 </Card>

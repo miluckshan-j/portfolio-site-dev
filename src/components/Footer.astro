@@ -1,0 +1,29 @@
+---
+import Card from "./Card.astro";
+import Link from "./Link.astro";
+---
+
+<footer class="col-span-4 mt-16">
+  <Card>
+    <p class="text-center">
+      Coded with
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACtklEQVR4nO1Zv4sTQRQeBUGwEBsVf6GCnVqYfW/jEYh5b2MjynWnqJ2IoHcnFlpqLTaW4o9OiwMbRbSx8x8QFA6uFMVGudybvShebmWSeHfebpLJZpPdg/3ga5blzfe9eTM781apHDly5Mg8Fr3CAWGYFMJ3mnFWCLUw1IXgqxC+1YS362X3oG28ehUPaYI7Jp4QfmvFQt2ObZ7dWDzt7B9YuF/GfULwVAiWNGPQjc13CJ93G9gkQjO8sI0nDE98Ku6NJ55wXDNIr4HChAVhZ2J9PKnghbjx/Ip7ri/xQu60EDb6H6ydPcZlIby5Eo/hlnkWOx5hQximrDM/iPj/TLAzIeSeH0S8XmOi50yYmo83zZ2nv8Xk4vne2J7OpcPwLLnBhkNhfNx5q7TYHdKmECyZSonK/lTa4rS1CbweNmA+SBkQp63KCN6EDGiGubSFaXvORhlIcPcZNkHCBghq6QtDOxLOR83A59SFsTU/RRjAmQwICyw5E7WNXsyAsMCGRmvIwE+vsH0jLGQh9OdLpR0hA61vAdxPW6DuzQeR4psGqid3Jnv4Sjz7Wpdht+oGn+BaZg0wTKpeCJTapBnepy1Wryfhh+Cu2tzTQGstuLuE4Uvqovkf4Xvfl3yfCmi6BWmLF8LfC55b6kv8qgnnrDD8SVF8w1xJ1SAQci4lcUfuWzzjss/u1YHEr84Ejo+ynKTZY4IrKkkIu6fMKXAEZaO1h2cSFb9iouocHeruRPCjVnHG1DBheqCa4eMQDMzWPPeIGgWCcnmrJnyYXObxpTlMqlFDV/Byu6sct95/mTamShPiFY+ZG1KcktFUPKGygKBQ2CIM96za5s3GLzwKqse3qazB97DYzGxHAzAX+1gw0tkgd3rt7c6cZ8yiz2TWu/1GEsZXQvi6zs7hji/myJEjh9rI+Av6K/Bt8zMD1QAAAABJRU5ErkJggg=="
+        class="inline h-6"
+      />
+       from
+      <a href="https://en.wikipedia.org/wiki/Sri_Lanka">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEX0lEQVR4nO2Y+08cVRTH9y9oGhQQjTZRE92ZfbMvd6G8WligA7GaGJvaH7QaH9W2UWNsg49akxUWllaEklosVBcB5d1Fno0tqQ2+oBBtLKJRqAoVaJDyXL7mnqEb2oXSxO4gzZzkZO/dvZv5fuaec+6ZUShkk0022WST7VYwdDyI1eSKmwUw2cZJ6lgOQPHc1gAf2aEI8CvrnWvSJXUEA2CwTIuuty1BE939rhl/faoLHsARrQPtO+xBAzi9y44iXVLwAK71k9ujVlcIORd48+MxuFiiXVLAEZUDOeFpOHh3Ks0zQwR89YIdFw4Z8OeHevRkWFD4QPLKAQx/osEv7kgad+y0wXV7OlxhafjJacJskxIzX3CYrOMxWc+hM8OEgQI9Rks1OLEtGtNeHv35Bsy1KtG114LMtYL0AL5mJX7YJyb0VD2PyzUqoE2Jsc/U+KdSRYB/l2gx3cDhbIYFF4u1KI/dAI99I847Tah2xOPX3EgMFunw2/sG1DjiceZFuzQAWaECif3+NSvNGx6Nw1wrR99NeXn6nG3iCHK6gUd/oQ4/u4yYa+FQmRQvhtT8Xc8OFVBwfwp6M01ofzZKGoD8+1JI5JmXbDRve2I9vnwyGjWpCZhrEXdh4JAewx4NLpWp0ZcTibN7LejNMtLujJRqKITY933ZRvQXGCg/JAuhj3QOAjj5lHjHhop1GPFo8eM+C4mZbeRwqVyN0VIWTmp07LTDddt1qs7adIyWaeC+Q5AGoNi4kQCaHouluTtcgHdzHLr2WPFHCY8RjwZDR7WUuBP1HFq3rl9SfHa4gBPbYijBJdsBVv4YQE2KGM/MWRXqecOCiTqeYn+0XIWxSjEfhmiHNBivVmG8SkV5wioVW4dWJa059XSUdACdr1spSbszzP5k7M/Xk5iJWhUJvVJGp47z8DWJIq/nl6tV0gF88/JD6M004rzTSHNWHpcTiGWcnQmSARzmk6nK9Lxlwbn9ZnTstv1ngJkGTjqA90IEivdvX7HSxc+9Y1pSGDvkcAMA7IZIBuCxJ2KsQg3vI3F0cV8zh2GPmsYsSa8VP16lxnevWlGXFk+50v+BPgDg1PZo6QBYz8OE5kYIaH8mCr4WJdX/gQLDVQCde6z+k9c576xtYL+xNoKq0PxadrZIBtCyJYaSzrtZPAcOc8k4eFcajU8/b/f3RIvV/bx1qZhp5OBr4vCxLdEPfPzhWOkA8u7dhJ43zTgQEdhFemyJJGiynkdF3IZFIX7PN/h7qWPmJBpP1PJXndYr9kz8eUICCepzG3HgzkBA55p09GaZ6MzIuycVRw0icG1qnHQ7sJizcGKtMwstJqgsNiFgTZUjARcK9ZhtFE/rjl026lZZA/j1btvKArDtzwkVkBMuIHdBU7bQM0PS4AoT4AoVqAdi7UcWm4eJ/ws6QJHeQQ/eNxpO/7uH+qEKDbr3m4P6WmWwTBscAHfEJkkdN/vV4kq54pYDkE022WSTTTbFKrR/AQtuPh7zfVjWAAAAAElFTkSuQmCC"
+          class="inline h-6"
+        />
+      </a>
+       | Made using
+      <Link content="Astro" link="https://astro.build" disableIcon />
+       &
+      <Link content="Tailwind CSS" link="https://tailwindcss.com" disableIcon />
+       | Icons by
+      <Link content="Icons8" link="https://icons8.com/" disableIcon />
+    </p>
+  </Card>
+</footer>

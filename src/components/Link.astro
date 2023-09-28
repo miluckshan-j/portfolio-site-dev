@@ -3,6 +3,7 @@ interface Props {
   link?: string;
   content?: string;
   disableIcon?: boolean;
+  boldText?: boolean;
 }
 
 const { link, content, disableIcon } = Astro.props;
@@ -10,7 +11,7 @@ const { link, content, disableIcon } = Astro.props;
 
 <a
   href={link}
-  class="underline no-underline decoration-2 hover:underline hover:decoration-cyan-900 hover:text-cyan-900"
+  class="font-medium underline no-underline decoration-2 hover:underline hover:decoration-cyan-900 hover:text-cyan-900"
 >
   {content}
   {disableIcon ? null : " ↗"}

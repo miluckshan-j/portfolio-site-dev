@@ -8,7 +8,7 @@ const { classes, hideDropShadow } = Astro.props;
 ---
 
 <div
-  class=`bg-white rounded-lg p-4 ${hideDropShadow ? "" : "drop-shadow-sm"}  ${classes}`
+  class=`bg-white rounded-lg p-4 ${hideDropShadow ? "" : "drop-shadow-sm"} ${classes}`
 >
   <slot />
 </div>

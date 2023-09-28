@@ -10,26 +10,24 @@ import Social from "../sections/home/Social.astro";
 ---
 
 <Layout>
-  <main>
-    <div class="grid md:grid-cols-4 gap-4">
-      <Card classes="col-span-4 md:col-span-2 grid content-center">
-        <About />
-      </Card>
-      <Card classes="col-span-4 md:col-span-2 grid content-center row-span-3">
-        <WorkExperience />
-      </Card>
-      <Card classes="col-span-4 md:col-span-2 grid content-center">
-        <Skills />
-      </Card>
-      <Card classes="col-span-4 md:col-span-2 grid content-center">
-        <Social />
-      </Card>
-      <div class="col-span-4">
-        <Blogs />
-      </div>
-      <div class="col-span-4">
-        <Projects />
-      </div>
+  <div class="grid md:grid-cols-4 gap-4">
+    <Card classes="col-span-4 md:col-span-2 grid content-center">
+      <About />
+    </Card>
+    <Card classes="col-span-4 md:col-span-2 grid content-center row-span-3">
+      <WorkExperience />
+    </Card>
+    <Card classes="col-span-4 md:col-span-2 grid content-center">
+      <Skills />
+    </Card>
+    <Card classes="col-span-4 md:col-span-2 grid content-center">
+      <Social />
+    </Card>
+    <div class="col-span-4">
+      <Blogs />
     </div>
-  </main>
+    <div class="col-span-4">
+      <Projects />
+    </div>
+  </div>
 </Layout>

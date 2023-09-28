@@ -1,7 +1,6 @@
 ---
-import Card from "../components/Card.astro";
 import Footer from "../components/Footer.astro";
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 
 interface Props {
   title?: string;
@@ -36,17 +35,10 @@ const { title, description, url, image } = Astro.props;
   <body
     class="bg-slate-100 p-8 md:p-16 text-gray-700 antialiased text-sm md:text-base font-light"
   >
-    <header
-      class="bg-slate-100 grid md:grid-cols-4 gap-4 mb-16 sticky top-0 z-50"
-    >
-      <Card classes="col-span-4 md:col-span-4 grid content-center">
-        <p class="text-lg md:text-4xl font-bold">Miluckshan J. Vidyajayan</p>
-        <p class="text-base md:text-lg font-normal">Senior Software Engineer</p>
-        <p>Engineering solutions to transform ideas into reality</p>
-      </Card>
-      <Navigation />
-    </header>
-    <slot />
+    <Header />
+    <main>
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>

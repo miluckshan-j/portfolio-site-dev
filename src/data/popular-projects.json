@@ -1,0 +1,66 @@
+[
+  {
+    "key": 1,
+    "title": "React 3D Configurator",
+    "link": "https://github.com/miluckshan-j/react-3d-configurator",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "image": "https://images.pexels.com/photos/15007209/pexels-photo-15007209/free-photo-of-photo-of-a-posing-woman-with-long-hair-standing-on-a-winter-meadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "technologies": ["React", "TypeScript", "Three.js"]
+  },
+  {
+    "key": 2,
+    "title": "Cat as a Service",
+    "link": "https://github.com/miluckshan-j/cat-as-a-service",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "image": "https://images.pexels.com/photos/15007209/pexels-photo-15007209/free-photo-of-photo-of-a-posing-woman-with-long-hair-standing-on-a-winter-meadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "technologies": ["Node.js", "TypeScript"]
+  },
+  {
+    "key": 3,
+    "title": "Next.js SEO",
+    "link": "https://github.com/miluckshan-j/next-js-seo",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "image": "https://images.pexels.com/photos/15007209/pexels-photo-15007209/free-photo-of-photo-of-a-posing-woman-with-long-hair-standing-on-a-winter-meadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "technologies": ["React", "Next.js", "JavaScript"]
+  },
+  {
+    "key": 4,
+    "title": "Pokémon Web Scraper",
+    "link": "https://github.com/miluckshan-j/pokemon-web-scraper",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "image": "https://images.pexels.com/photos/15007209/pexels-photo-15007209/free-photo-of-photo-of-a-posing-woman-with-long-hair-standing-on-a-winter-meadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "technologies": ["Python", "Beautiful Soup"]
+  },
+  {
+    "key": 5,
+    "title": "React 3D Configurator",
+    "link": "https://github.com/miluckshan-j/react-3d-configurator",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "image": "https://images.pexels.com/photos/15007209/pexels-photo-15007209/free-photo-of-photo-of-a-posing-woman-with-long-hair-standing-on-a-winter-meadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "technologies": ["React", "TypeScript", "Three.js"]
+  },
+  {
+    "key": 6,
+    "title": "Cat as a Service",
+    "link": "https://github.com/miluckshan-j/cat-as-a-service",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "image": "https://images.pexels.com/photos/15007209/pexels-photo-15007209/free-photo-of-photo-of-a-posing-woman-with-long-hair-standing-on-a-winter-meadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "technologies": ["Node.js", "TypeScript"]
+  },
+  {
+    "key": 7,
+    "title": "Next.js SEO",
+    "link": "https://github.com/miluckshan-j/next-js-seo",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "image": "https://images.pexels.com/photos/15007209/pexels-photo-15007209/free-photo-of-photo-of-a-posing-woman-with-long-hair-standing-on-a-winter-meadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "technologies": ["React", "Next.js", "JavaScript"]
+  },
+  {
+    "key": 8,
+    "title": "Pokémon Web Scraper",
+    "link": "https://github.com/miluckshan-j/pokemon-web-scraper",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "image": "https://images.pexels.com/photos/15007209/pexels-photo-15007209/free-photo-of-photo-of-a-posing-woman-with-long-hair-standing-on-a-winter-meadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "technologies": ["Python", "Beautiful Soup"]
+  }
+]

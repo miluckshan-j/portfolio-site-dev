@@ -1,0 +1,36 @@
+---
+import Card from "../components/Card.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import Layout from "../layouts/Layout.astro";
+import projects from "../data/projects.json";
+---
+
+<Layout>
+  <div class="grid md:grid-cols-4 gap-4">
+    <div class="col-span-4">
+      <p
+        class="text-base md:text-3xl font-normal md:font-semibold text-center md:text-left mb-3"
+      >
+        Projects
+      </p>
+    </div>
+    <div class="col-span-4">
+      <Card>
+        <div class="grid md:grid-cols-2 gap-4">
+          {
+            projects.map((project) => {
+              return (
+                <ProjectCard
+                  title={project.title}
+                  summary={project.summary}
+                  image={project.image}
+                  technologies={project.technologies}
+                />
+              );
+            })
+          }
+        </div>
+      </Card>
+    </div>
+  </div>
+</Layout>

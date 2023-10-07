@@ -1,0 +1,35 @@
+---
+import Button from "./Button.astro";
+import Card from "./Card.astro";
+import Link from "./Link.astro";
+---
+
+<Card classes="col-span-4 block md:hidden">
+  <div class="grid gap-4 stretch text-base md:text-lg font-normal">
+    <Button text="Menu" classes="mobile-menu-btn" />
+    <div
+      class="mobile-menu-nav grid gap-4 text-base md:text-lg font-normal hidden"
+    >
+      <Link link="/" content="Home" disableIcon />
+      <Link link="blogs" content="Blogs" disableIcon />
+      <Link link="projects" content="Projects" disableIcon />
+      <Link link="" content="Contact" disableIcon />
+    </div>
+  </div>
+</Card>
+
+<script>
+  let isHidden = true;
+  document
+    .getElementsByClassName("mobile-menu-btn")[0]
+    ?.addEventListener("click", () => {
+      const mobileMenuNav =
+        document.getElementsByClassName("mobile-menu-nav")[0];
+      if (isHidden) {
+        mobileMenuNav?.classList.replace("hidden", "visible");
+      } else {
+        mobileMenuNav?.classList.replace("visible", "hidden");
+      }
+      isHidden = !isHidden;
+    });
+</script>

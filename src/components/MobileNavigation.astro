@@ -26,9 +26,9 @@ import Link from "./Link.astro";
       const mobileMenuNav =
         document.getElementsByClassName("mobile-menu-nav")[0];
       if (isHidden) {
-        mobileMenuNav?.classList.replace("hidden", "visible");
+        mobileMenuNav?.classList.remove("hidden");
       } else {
-        mobileMenuNav?.classList.replace("visible", "hidden");
+        mobileMenuNav?.classList.add("hidden");
       }
       isHidden = !isHidden;
     });

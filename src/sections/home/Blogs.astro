@@ -21,12 +21,14 @@ import blogs from "../../data/latest-blogs.json";
             title={blog.title}
             summary={blog.summary}
             image={blog.image}
+            link={blog.link}
           />
         ) : (
           <TextCard
             classes="grid md:grid-cols-1 gap-4"
             title={blog.title}
             summary={blog.summary}
+            link={blog.link}
           />
         );
       })

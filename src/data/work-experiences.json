@@ -5,7 +5,7 @@
     "workPlace": "Corzent",
     "duration": "Feb 2023 - Present",
     "link": "https://corzent.com",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "description": "Developing new features and bug fixes for v2 of a home loan management application which is used in pilot phase by lenders, brokers and few banks in Australia."
   },
   {
     "key": 2,
@@ -13,7 +13,7 @@
     "workPlace": "Niftron",
     "duration": "Aug 2021 - Feb 2023",
     "link": "https://www.niftron.com",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "description": "Led the design and development of the backend and cloud architecture of a Blockchain-based Decentralized Identity (DID) platform."
   },
   {
     "key": 3,
@@ -21,6 +21,6 @@
     "workPlace": "Atlas Labs",
     "duration": "Feb 2021 - Aug 2021",
     "link": "https://atlaslabs.com.au",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "description": "Managed the core client project and contributed extensively in refactoring legacy Angular code and building new features at a fast pace."
   }
 ]

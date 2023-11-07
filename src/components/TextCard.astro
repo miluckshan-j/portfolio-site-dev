@@ -3,16 +3,19 @@ interface Props {
   classes?: string;
   title?: string;
   summary?: string;
+  link?: string;
 }
 
-const { classes, title, summary } = Astro.props;
+const { classes, title, summary, link } = Astro.props;
 ---
 
 <div class=`rounded-lg bg-slate-100 p-4 ${classes}`>
   <p
     class="text-base md:text-xl font-normal md:font-semibold text-center md:text-left"
   >
-    {title}
+    <a href={link}>
+      {title}
+    </a>
   </p>
   <p class="line-clamp-4">
     {summary}

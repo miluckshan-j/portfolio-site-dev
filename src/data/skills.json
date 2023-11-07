@@ -13,7 +13,7 @@
   },
   {
     "key": 4,
-    "value": "JavaScript"
+    "value": "JavaScript (ES6)"
   },
   {
     "key": 5,
@@ -37,34 +37,38 @@
   },
   {
     "key": 10,
-    "value": "Python"
+    "value": "Express.js"
   },
   {
     "key": 11,
-    "value": "MongoDB"
+    "value": "Python"
   },
   {
     "key": 12,
-    "value": "SQL"
+    "value": "MongoDB"
   },
   {
     "key": 13,
-    "value": "Git"
+    "value": "SQL"
   },
   {
     "key": 14,
-    "value": "AWS"
+    "value": "Git"
   },
   {
     "key": 15,
-    "value": "Linux"
+    "value": "Amazon Web Services (AWS)"
   },
   {
     "key": 16,
-    "value": "Figma"
+    "value": "Linux"
   },
   {
     "key": 17,
+    "value": "Figma"
+  },
+  {
+    "key": 18,
     "value": "WordPress"
   }
 ]

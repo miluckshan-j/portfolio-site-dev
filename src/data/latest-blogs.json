@@ -1,38 +1,23 @@
 [
   {
     "key": 1,
-    "title": "Installing Multiple Ruby Versions using rbenv on macOS",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "image": "https://images.pexels.com/photos/15007209/pexels-photo-15007209/free-photo-of-photo-of-a-posing-woman-with-long-hair-standing-on-a-winter-meadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "title": "Installing Multiple Ruby Versions using rbenv on macOS",
+    "summary": "There would have been situations where one of your applications requires a specific version of Ruby to compile or run. One would be tempted to uninstall and re-install the required version which would be inconvenient...",
+    "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*HIMzrlQs4HYU-FwGu8bu2A.jpeg",
+    "link": "https://medium.com/corzent/installing-multiple-ruby-versions-using-rbenv-on-macos-6ae6b21007e1"
   },
   {
     "key": 2,
-    "title": "Installing Multiple Ruby Versions using rbenv on macOS",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "image": null
+    "title": "Tips for New Developers Who Are Starting Their Career (Part 1)",
+    "summary": "This article is a collection of advices I received, what I learnt in my personal experiences and, things I wish I knew earlier on in my career. I hope this gives you an extra advantage if you're starting your career in IT...",
+    "image": null,
+    "link": "https://medium.com/corzent/tips-for-new-developers-who-are-starting-their-career-part-1-65606ec37c01"
   },
   {
     "key": 3,
-    "title": "Installing Multiple Ruby Versions using rbenv on macOS",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "image": null
-  },
-  {
-    "key": 4,
-    "title": "Installing Multiple Ruby Versions using rbenv on macOS",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "image": null
-  },
-  {
-    "key": 1,
-    "title": "Installing Multiple Ruby Versions using rbenv on macOS",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "image": "https://images.pexels.com/photos/15007209/pexels-photo-15007209/free-photo-of-photo-of-a-posing-woman-with-long-hair-standing-on-a-winter-meadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-  },
-  {
-    "key": 4,
-    "title": "Installing Multiple Ruby Versions using rbenv on macOS",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "image": null
+    "title": "Why I'm Proud to be Part of the Corzent Team: My Journey So Far",
+    "summary": "This article explains my personal experience working at Corzent. Corzent is a people-first startup located in the heart of Colombo, Sri Lanka. Although it’s a startup, only those working there know how established it is...",
+    "image": null,
+    "link": "https://medium.com/corzent/why-im-proud-to-be-part-of-the-corzent-team-my-journey-so-far-b3afd86d8ffd"
   }
 ]

@@ -4,9 +4,10 @@ interface Props {
   title?: string;
   summary?: string;
   image?: string;
+  link?: string;
 }
 
-const { classes, title, summary, image } = Astro.props;
+const { classes, title, summary, image, link } = Astro.props;
 ---
 
 <div
@@ -19,7 +20,9 @@ const { classes, title, summary, image } = Astro.props;
     <p
       class="text-base md:text-xl font-normal md:font-semibold text-center md:text-left"
     >
-      {title}
+      <a href={link}>
+        {title}
+      </a>
     </p>
     <p class="line-clamp-4">
       {summary}

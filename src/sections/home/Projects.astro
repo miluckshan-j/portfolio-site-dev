@@ -26,6 +26,24 @@ import projects from "../../data/latest-projects.json";
     }
   </div>
   <Card classes="col-span-2 grid content-center pb-0" hideDropShadow>
-    <Button classes="md:w-2/12 mx-auto" text="View More" />
+    <Button classes="md:w-2/12 mx-auto" text="View More" id="view-more" />
   </Card>
 </Card>
+
+<script>
+  import { navigate } from "astro:transitions/client";
+
+  function setupViewMoreButton() {
+    const viewMoreButton = document.getElementById("view-more");
+
+    if (viewMoreButton) {
+      viewMoreButton.addEventListener("click", () => {
+        navigate("/projects");
+      });
+    }
+  }
+
+  setupViewMoreButton();
+
+  document.addEventListener("astro:page-load", setupViewMoreButton);
+</script>

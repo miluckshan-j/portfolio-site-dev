@@ -1,13 +1,15 @@
 ---
 interface Props {
+  id?: string;
   classes?: string;
   text?: string;
 }
 
-const { classes, text } = Astro.props;
+const { id, classes, text } = Astro.props;
 ---
 
 <button
+  id={id}
   class=`rounded-md bg-cyan-950 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-950 text-center ${classes}`
 >
   {text}

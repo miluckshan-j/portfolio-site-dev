@@ -35,6 +35,24 @@ import blogs from "../../data/latest-blogs.json";
     }
   </div>
   <Card classes="col-span-2 grid content-center pb-0" hideDropShadow>
-    <Button classes="md:w-2/12 mx-auto" text="Read More" />
+    <Button classes="md:w-2/12 mx-auto" text="Read More" id="read-more" />
   </Card>
 </Card>
+
+<script>
+  import { navigate } from "astro:transitions/client";
+
+  function setupReadMoreButton() {
+    const readMoreButton = document.getElementById("read-more");
+
+    if (readMoreButton) {
+      readMoreButton.addEventListener("click", () => {
+        navigate("/blogs");
+      });
+    }
+  }
+
+  setupReadMoreButton();
+
+  document.addEventListener("astro:page-load", setupReadMoreButton);
+</script>

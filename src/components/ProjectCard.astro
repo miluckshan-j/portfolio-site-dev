@@ -15,15 +15,19 @@ const { classes, title, link, summary, image, technologies } = Astro.props;
 
 <!-- TODO: Use better approach following semantics -->
 <a
-  class=`rounded-lg bg-slate-100 grid md:grid-cols-3 md:min-h-[10rem] p-4 ${classes}`
+  class=`rounded-lg bg-slate-100 grid md:min-h-[10rem] p-4 place-items-start ${classes ?? ''}`
   href={link}
 >
-  <div
-    class="col-span-1 rounded-l-lg bg-no-repeat bg-contain bg-center"
-    style=`background-image: url("${image}")`
-  >
-  </div>
-  <div class="col-span-2 p-4 flex flex-col justify-center">
+  {
+    image ? (
+      <div
+        class="col-span-1 rounded-l-lg bg-no-repeat bg-contain bg-center"
+        style={`background-image: url("${image}")`}
+      />
+    ) : null
+  }
+
+  <div class=`${image ? "col-span-2" : ""} p-4 flex flex-col justify-center`>
     <p class="font-bold">
       {title}
     </p>
@@ -35,7 +39,7 @@ const { classes, title, link, summary, image, technologies } = Astro.props;
     >
       {
         technologies?.map((technology) => {
-          return <Pill classes="bg-white mx-2 md:mx-0" value={technology} />;
+          return <Pill classes="bg-white mr-2 md:mx-0" value={technology} />;
         })
       }
     </div>

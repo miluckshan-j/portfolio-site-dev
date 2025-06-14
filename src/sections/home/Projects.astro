@@ -2,23 +2,22 @@
 import Card from "../../components/Card.astro";
 import ProjectCard from "../../components/ProjectCard.astro";
 import Button from "../../components/Button.astro";
-import projects from "../../data/popular-projects.json";
+import projects from "../../data/latest-projects.json";
 ---
 
 <p
   class="text-base md:text-3xl font-normal md:font-semibold text-center md:text-left mb-3"
 >
-  Popular Projects
+  Latest Projects
 </p>
 <Card>
-  <div class="grid md:grid-cols-2 gap-4">
+  <div class="grid md:grid-cols-4 gap-4">
     {
       projects.map((project) => {
         return (
           <ProjectCard
             title={project.title}
             summary={project.summary}
-            image={project.image}
             technologies={project.technologies}
             link={project.link}
           />
